@@ -1,0 +1,8 @@
+<p>
+  <%= link_to "New Repository", new_repository_path %>
+  <ul>
+  <% Repository.all.each do |repo| %>
+    <li><%= link_to repo.name, repo %> (<%= link_to "Delete", repo, :method => :delete %>)</li>
+  <% end %>
+  </ul>
+</p>
