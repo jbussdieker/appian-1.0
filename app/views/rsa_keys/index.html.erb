@@ -1,0 +1,10 @@
+<h3>Keys</h3>
+
+<%= link_to "New", new_rsa_key_path %>
+
+<ul>
+  <% @keys.each do |k| %>
+    <li><%= k.key_data %><%= link_to "Delete", k, :method => :delete %></li>
+  <% end %>
+</ul>
+

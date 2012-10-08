@@ -1,5 +1,6 @@
 Appian::Application.routes.draw do
   resources :repositories
+  resources :rsa_keys
 
   devise_for :users
 
